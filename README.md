@@ -69,7 +69,3 @@ If you have any feedback, questions, or need support with Peppers-and-Plates, pl
 - Express.js Documentation: [https://expressjs.com/](https://expressjs.com/)
 - React.js Documentation: [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
 - Node.js Documentation: [https://nodejs.org/en/docs/](https://nodejs.org/en/docs/)
-
-#### License:
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
