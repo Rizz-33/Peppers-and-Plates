@@ -1,4 +1,4 @@
-## Peppers-and-Plates - Food Delivery Web App
+# Peppers-and-Plates - Food Delivery Web App
 
 Welcome to Peppers-and-Plates, a food delivery web application built with MongoDB, Express.js, React.js, and Node.js (MERN stack). This README provides an in-depth overview of the project structure, setup instructions, and features of each module.
 
