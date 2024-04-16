@@ -1,4 +1,4 @@
-assets.js
+
 import basket_icon from './basket_icon.png'
 import header_img from './header_img.png'
 import logo from './logo.png'
@@ -247,7 +247,7 @@ export const menu_list = [
             price: 2600,
             description: "A timeless favorite featuring savory pepperoni slices, gooey melted cheese, and tangy tomato sauce on a crispy crust.",
             category: "Pizzas"
-        }, { 
+        }, {
             _id: "19",
             name: "Veggie Supreme Pizza",
             image: food_19,
