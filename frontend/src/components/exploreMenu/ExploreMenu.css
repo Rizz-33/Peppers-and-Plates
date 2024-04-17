@@ -52,3 +52,10 @@
     background-color: #dddddd;
     border: none;
 }
+.explore-menu-list-item .active-image {
+    border: 2px solid black;
+    padding: 2px;
+}
+.explore-menu-list-item .active-name {
+    color: black;
+}
