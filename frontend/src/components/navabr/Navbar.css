@@ -1,11 +1,11 @@
 .navbar{
-    padding: 20px 0px;
+    padding: 30px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .logo{
-    height: 180px;
+    height: 70px;
 }
 .search_icon{
     height: 20px;
@@ -24,7 +24,7 @@
     right: -8px;
 }
 .basket_icon{
-    height: 20px;
+    height: 21px;
 }
 .navbar-menu{
     display: flex;
