@@ -1,6 +1,7 @@
 
 import basket_icon from './basket_icon.png'
 import header_img from './header_img.jpg'
+import logo_white from './logo-white.png'
 import logo from './logo.png'
 import menu_1 from './menu_1.jpg'
 import menu_2 from './menu_2.png'
@@ -62,6 +63,7 @@ import selector_icon from './selector_icon.png'
 import twitter_icon from './twitter_icon.png'
 
 export const assets = {
+    logo_white,
     logo,
     basket_icon,
     header_img,

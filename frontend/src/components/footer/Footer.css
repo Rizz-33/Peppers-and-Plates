@@ -7,3 +7,40 @@
 .likedin{
     width: 23px;
 }
+.footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 8vw;
+    padding-top: 80px;
+    margin-top: 100px;
+}
+.footer-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+}
+.footer-content-left, .footer-content-right, .footer-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    color: rgb(207, 207, 207);
+}
+.footer-content-left li, .footer-content-right li, .footer-content-center li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.footer-content-right h2, .footer-content-center h2 {
+    color: white;
+}
+.footer hr{
+    width: 100%;
+    height: 2px;
+    margin: 20px 0px;
+}
