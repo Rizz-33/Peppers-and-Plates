@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-content-left">
                     <img src={assets.logo_white} alt="" className='logo'/>
-                    <p></p>
+                    <p className='contentp'>Enjoy the exquisite flavors at Peppers & Plates! Our menu offers a variety of delicious dishes, from appetizers to desserts. Order now for a delightful dining experience!</p>
                     <div className="footer-social-icons">
                         <img src={assets.facebook_icon} alt="" className='facebook'/>
                         <img src={assets.twitter_icon} alt="" className='twitter'/>

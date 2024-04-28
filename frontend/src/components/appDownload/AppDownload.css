@@ -1,0 +1,25 @@
+.app-download{
+    margin: auto auto;
+    margin-top: 100px;
+    font-size: max(3vw);
+    text-align: center;
+}
+.playstore{
+    width: 80px;
+}
+.appstore{
+    width: 75px;
+}
+.app-download-platforms{
+    display: flex;
+    justify-content: center;
+    gap: max(2vw, 10px);
+    margin-top: 40px;
+}
+.app-download-platforms img{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.app-download-platforms img:hover{
+    transform: scale(1.05);
+}
