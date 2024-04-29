@@ -5,10 +5,11 @@
     text-align: center;
 }
 .playstore{
-    width: 80px;
+    height: 55px;
 }
 .appstore{
-    width: 75px;
+    height: 50px;
+    width: 180px;
 }
 .app-download-platforms{
     display: flex;
