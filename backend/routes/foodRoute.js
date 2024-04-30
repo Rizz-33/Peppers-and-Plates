@@ -1,6 +1,6 @@
 import express from "express";
 import multer from "multer";
-import { addFood } from "../controllers/foodController";
+import { addFood } from "../controllers/foodController.js";
 
 const foodRouter = express.Router();
 
