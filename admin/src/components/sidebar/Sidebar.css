@@ -30,7 +30,11 @@
 }
 .side-option:focus {
     outline: none;
-    border-color: black;
+    border-color: rgb(63, 63, 63);
+    background-color: #f3f3f3;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
 }
 
 @media (max-width:900px) {
