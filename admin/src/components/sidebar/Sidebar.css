@@ -28,9 +28,9 @@
 .side-option:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-.side-option:focus {
+.side-option.active {
     outline: none;
-    border-color: rgb(63, 63, 63);
+    border-color: #f3f3f3;
     background-color: #f3f3f3;
     font-weight: 600;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
