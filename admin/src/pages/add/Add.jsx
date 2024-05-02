@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 import { assets } from '../../assets/assets';
 import './Add.css';
 
@@ -45,8 +46,9 @@ const Add = () => {
                 }
             )
             setImage(false)
+            toast.success(respond.data.message)
         } else {
-
+            toast.error(respond.data.message)
         }
     }
 

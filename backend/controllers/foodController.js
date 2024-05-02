@@ -15,10 +15,10 @@ const addFood = async (req,res) => {
     })
     try {
         await food.save();
-        res.json({success:true,message:"Food Added"})
+        res.json({success:true,message:"The food item has been added successfully!"})
     } catch (error) {
         console.log(error)
-        res.json({success:false,message:"Error"})
+        res.json({success:false,message:"Error: Unable to add the food item. Please try again!"})
     }
 }
 
@@ -40,10 +40,10 @@ const removeFood = async (req,res) => {
         fs.unlink(`uploads/${food.image}`,()=>{})
 
         await foodModel.findByIdAndDelete(req.body.id);
-        res.json({success:true,message:"Food Removed"})
+        res.json({success:true,message:"The food item has been removed successfully!"})
     } catch (error) {
         console.log(error);
-        res.json({success:false,message:"Error"})
+        res.json({success:false,message:"Error: Unable to remove the food item. Please try again!"})
     }
 }
 
