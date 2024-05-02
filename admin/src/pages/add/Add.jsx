@@ -4,9 +4,8 @@ import { toast } from 'react-toastify';
 import { assets } from '../../assets/assets';
 import './Add.css';
 
-const Add = () => {
+const Add = ({url}) => {
 
-    const url = "http://localhost:4000";
     const [image, setImage] = useState(null);
     const [data, setData] = useState({
         name: '',
