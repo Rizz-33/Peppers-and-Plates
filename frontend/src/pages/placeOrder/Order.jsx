@@ -24,9 +24,22 @@ const Order = () => {
         setData(data=>({...data,[name]:value}))
     }
 
+    const placeOrder = async (event) => {
+        event.preventDefault();
+        let orderItems = [];
+        food_list.map((item)=>{
+            if (cartItems[item,_id]>0) {
+                let itemInfo = item;
+                itemInfo["quantity"] = cartItems[item._id];
+                orderItems.push(itemInfo)
+            }
+        })
+        console.log(orderItems);
+    }
+
     
     return (
-        <form className='place-order'>
+        <form onSubmit={placeOrder} className='place-order'>
             <div className="place-order-left">
                 <p className="title">Delivery Information</p>
                 <div className="multi-fields">
@@ -64,7 +77,7 @@ const Order = () => {
                             <p>{getTotalCartAmount()===0?0:getTotalCartAmount()+200} LKR</p>
                         </div>
                     </div>
-                    <button>PROCEED TO PAYMENT</button>
+                    <button type='submit'>PROCEED TO PAYMENT</button>
                 </div>
             </div>
         </form>
