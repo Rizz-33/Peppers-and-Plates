@@ -1,5 +1,6 @@
 import axios from 'axios'
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { StoreContext } from '../../context/StoreContext'
 import './Order.css'
 
@@ -48,6 +49,16 @@ const Order = () => {
             alert("Error in processing. Please try again!");
         }
     }
+
+    const navigate = useNavigate();
+
+    useEffect(()=>{
+        if (!token) {
+            navigate('/cart');
+        } else if (getTotalCartAmount()===0) {
+            navigate('/cart')
+        }
+    },[token])
 
     
     return (
