@@ -23,9 +23,9 @@ const placeOrder = async (req,res) => {
                 product_data:{
                     name:item.name
                 },
-                unit_amount:item.price*100*300
+                unit_amount:item.price*100
             },
-            quantity:item.qunatity
+            quantity:item.quantity
         }))
 
         line_items.push({
@@ -34,7 +34,7 @@ const placeOrder = async (req,res) => {
                 product_data:{
                     name:"Delivery Charges"
                 },
-                unit_amount:2*100*300
+                unit_amount:2*100*100
             },
             quantity:1
         })
