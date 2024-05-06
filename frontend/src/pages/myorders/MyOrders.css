@@ -16,9 +16,10 @@
     align-items: center;
     gap: 30px;
     font-size: 14px;
-    padding: 10px 20px;
+    padding: 20px 30px;
     color: #454545;
-    border: 1px solid black;
+    border: 0.5px solid rgb(134, 134, 134);
+    border-radius: 12px;
 }
 .my-orders-order p b{
     font-weight: 500;
