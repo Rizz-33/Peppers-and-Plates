@@ -6,6 +6,7 @@ import Navbar from './components/navabr/Navbar';
 import Cart from './pages/cart/Cart';
 import Home from './pages/home/Home';
 import Order from './pages/placeOrder/Order';
+import Verify from './pages/verify/Verify';
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<Order />} />
+          <Route path='/verify' element={<Verify />}/>
         </Routes>
       </div>
       <Footer />
