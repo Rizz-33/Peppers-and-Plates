@@ -6,7 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 const placeOrder = async (req,res) => {
     
-    const frontend_url = "http://localhost:5174"
+    const frontend_url = "http://localhost:5173"
     try {
         const newOrder = new orderModel({
             userId:req.body.userId,
@@ -79,5 +79,15 @@ const userOrders = async (req,res) => {
     }
 }
 
-export { placeOrder, userOrders, verifyOrder };
+const listOrders = async (req,res) => {
+    try {
+        const orders = await orderModel.find({});
+        res.json({success:true,data:orders})
+    } catch (error) {
+        console.log(error);
+        res.json({success:false,message:"Error fetching the data from database!"})
+    }
+}
+
+export { listOrders, placeOrder, userOrders, verifyOrder };
 
