@@ -52,12 +52,17 @@ Peppers-and-Plates is a comprehensive food delivery platform designed to connect
    npm install
    ```
 
-4. Start the development server:
+4. Start the development of frontend and admin:
    ```
    npm run dev
    ```
+   
+5. Start the development of backend:
+   ```
+   npm run server
+   ```
 
-5. Open your browser and visit `http://localhost:3000` to view the application.
+6. Open your browser and visit `http://localhost:3000` to view the application.
 
 #### Feedback and Support:
 
