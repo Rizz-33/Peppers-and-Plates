@@ -1,9 +1,10 @@
-# Security Policy
+---
+
+# Security Policy for Peppers & Plates
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+The following table outlines the versions of Peppers & Plates that are currently supported with security updates:
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -14,8 +15,32 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+If you find a vulnerability in Peppers & Plates, please follow these guidelines for reporting it:
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+1. **Where to Report**:
+   - Email [aarruwanthie@gmail.com](mailto:aarruwanthie@gmail.com) with the subject line "Security Vulnerability Report."
+
+2. **Information to Include**:
+   - A detailed description of the vulnerability.
+   - Steps to reproduce the issue.
+   - Any relevant logs or screenshots.
+   - Your contact information.
+
+3. **Response Time**:
+   - You will receive an acknowledgment of your report within 48 hours.
+   - Expect updates on the investigation every 7 days or as appropriate.
+
+4. **Resolution Process**:
+   - If the vulnerability is confirmed, the next steps will be communicated to you.
+   - Resolution times depend on the severity and complexity of the vulnerability.
+   - If your report does not indicate a valid vulnerability, you'll receive a response explaining why.
+
+5. **Confidentiality**:
+   - We ensure that all communication related to your report remains confidential.
+   - If the vulnerability is confirmed and you prefer public acknowledgment, you can request to be credited.
+
+## Additional Information
+- For general security practices, please refer to our [Security Best Practices](link-to-best-practices).
+- If you have additional security-related questions, contact [aarruwanthie@gmail.com](mailto:aarruwanthie@gmail.com).
+
+---
