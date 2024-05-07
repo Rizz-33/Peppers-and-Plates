@@ -1,5 +1,3 @@
----
-
 # Security Policy for Peppers & Plates
 
 ## Supported Versions
@@ -42,5 +40,3 @@ If you find a vulnerability in Peppers & Plates, please follow these guidelines 
 ## Additional Information
 - For general security practices, please refer to our [Security Best Practices](link-to-best-practices).
 - If you have additional security-related questions, contact [aarruwanthie@gmail.com](mailto:aarruwanthie@gmail.com).
-
----
