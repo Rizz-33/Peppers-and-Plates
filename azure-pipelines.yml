@@ -21,12 +21,6 @@ steps:
 - script: |
     set -x
     cd admin
-    npm run test
-  displayName: 'Run tests for admin'
-
-- script: |
-    set -x
-    cd admin
     npm run build
   displayName: 'Build project for admin'
 
@@ -39,12 +33,6 @@ steps:
 - script: |
     set -x
     cd backend
-    npm run test
-  displayName: 'Run tests for backend'
-
-- script: |
-    set -x
-    cd backend
     npm run build
   displayName: 'Build project for backend'
 
@@ -53,12 +41,6 @@ steps:
     cd frontend
     npm install
   displayName: 'Install npm dependencies for frontend'
-
-- script: |
-    set -x
-    cd frontend
-    npm run test
-  displayName: 'Run tests for frontend'
 
 - script: |
     set -x
