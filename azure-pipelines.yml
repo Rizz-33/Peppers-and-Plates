@@ -8,6 +8,7 @@ steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '16.x'
+    checkLatest: true
   displayName: 'Install Node.js'
 
 - script: |
@@ -27,8 +28,8 @@ steps:
 - script: |
     set -x
     cd backend
-    npm install
-    npm rebuild bcrypt
+    npm install --cache $(Build.SourcesDirectory)/npm-cache
+    npm rebuild bcrypt --cache $(Build.SourcesDirectory)/npm-cache
   displayName: 'Install npm dependencies for backend and rebuild bcrypt'
 
 - script: |
