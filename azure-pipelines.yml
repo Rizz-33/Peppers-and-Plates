@@ -1,7 +1,9 @@
 trigger:
 - main
+
 pool:
   vmImage: ubuntu-latest
+
 steps:
 - task: NodeTool@0
   inputs:
@@ -16,11 +18,13 @@ steps:
     cd admin
     npm install
   displayName: 'Install npm dependencies for admin'
+
 - script: |
     set -x
     cd admin
     npm run build
   displayName: 'Build project for admin'
+
 - script: |
     set -x
     cd backend
@@ -33,11 +37,13 @@ steps:
     cd backend
     node server.js
   displayName: 'Start backend server'
+
 - script: |
     set -x
     cd frontend
     npm install 
   displayName: 'Install npm dependencies for frontend'
+
 - script: |
     set -x
     cd frontend
