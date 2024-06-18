@@ -33,8 +33,8 @@ steps:
 - script: |
     set -x
     cd backend
-    npm run build
-  displayName: 'Build project for backend'
+    npm run server
+  displayName: 'Start backend server'
 
 - script: |
     set -x
