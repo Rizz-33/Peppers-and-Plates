@@ -43,18 +43,3 @@ steps:
     cd frontend
     npm run build
   displayName: 'Build project for frontend'
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'admin/build'
-    ArtifactName: 'admin'
-    publishLocation: 'Container'
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'backend/build'
-    ArtifactName: 'backend'
-    publishLocation: 'Container'
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: 'frontend/build'
-    ArtifactName: 'frontend'
-    publishLocation: 'Container'
