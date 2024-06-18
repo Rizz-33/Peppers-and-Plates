@@ -33,7 +33,7 @@ steps:
 - script: |
     set -x
     cd backend
-    npx nodemon server.js
+    node server.js
   displayName: 'Start backend server'
 
 - script: |
