@@ -16,39 +16,23 @@ steps:
     node -v
     npm -v
     cd admin
-    npm install
-  displayName: 'Install npm dependencies for admin'
-
-- script: |
-    set -x
-    cd admin
+    npm ci
     npm run build
-  displayName: 'Build project for admin'
+  displayName: 'Build and package admin'
 
 - script: |
     set -x
     cd backend
-    npm install
+    npm ci
     npm rebuild bcrypt
-  displayName: 'Install npm dependencies for backend and rebuild bcrypt'
-
-- script: |
-    set -x
-    cd backend
-    node server.js
-  displayName: 'Start backend server'
+  displayName: 'Install npm dependencies and rebuild bcrypt for backend'
 
 - script: |
     set -x
     cd frontend
-    npm install
-  displayName: 'Install npm dependencies for frontend'
-
-- script: |
-    set -x
-    cd frontend
+    npm ci
     npm run build
-  displayName: 'Build project for frontend'
+  displayName: 'Build and package frontend'
 
 - task: PublishBuildArtifacts@1
   inputs:
@@ -58,7 +42,7 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: 'backend/build'
+    PathtoPublish: 'backend'
     ArtifactName: 'backend'
     publishLocation: 'Container'
 
