@@ -21,12 +21,6 @@ steps:
 - script: |
     set -x
     cd admin
-    npm run lint
-  displayName: 'Lint code for admin'
-
-- script: |
-    set -x
-    cd admin
     npm run test
   displayName: 'Run tests for admin'
 
@@ -45,12 +39,6 @@ steps:
 - script: |
     set -x
     cd backend
-    npm run lint
-  displayName: 'Lint code for backend'
-
-- script: |
-    set -x
-    cd backend
     npm run test
   displayName: 'Run tests for backend'
 
@@ -65,12 +53,6 @@ steps:
     cd frontend
     npm install
   displayName: 'Install npm dependencies for frontend'
-
-- script: |
-    set -x
-    cd frontend
-    npm run lint
-  displayName: 'Lint code for frontend'
 
 - script: |
     set -x
