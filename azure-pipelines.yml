@@ -28,7 +28,8 @@ steps:
     set -x
     cd backend
     npm install
-  displayName: 'Install npm dependencies for backend'
+    npm rebuild bcrypt
+  displayName: 'Install npm dependencies for backend and rebuild bcrypt'
 
 - script: |
     set -x
