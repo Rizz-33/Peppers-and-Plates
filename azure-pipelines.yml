@@ -16,21 +16,21 @@ steps:
     node -v
     npm -v
     cd admin
-    npm ci
+    npm install
     npm run build
   displayName: 'Build and package admin'
 
 - script: |
     set -x
     cd backend
-    npm ci
+    npm install
     npm rebuild bcrypt
   displayName: 'Install npm dependencies and rebuild bcrypt for backend'
 
 - script: |
     set -x
     cd frontend
-    npm ci
+    npm install
     npm run build
   displayName: 'Build and package frontend'
 
