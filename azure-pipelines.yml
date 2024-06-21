@@ -1,0 +1,51 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '16.x'
+    checkLatest: true
+  displayName: 'Install Node.js'
+
+- script: |
+    set -x
+    node -v
+    npm -v
+    cd admin
+    npm install
+  displayName: 'Install npm dependencies for admin'
+
+- script: |
+    set -x
+    cd admin
+    npm run build
+  displayName: 'Build project for admin'
+
+- script: |
+    set -x
+    cd backend
+    npm install --cache $(Build.SourcesDirectory)/npm-cache
+    npm rebuild bcrypt --cache $(Build.SourcesDirectory)/npm-cache
+  displayName: 'Install npm dependencies for backend and rebuild bcrypt'
+
+- script: |
+    set -x
+    cd backend
+    node server.js
+  displayName: 'Start backend server'
+
+- script: |
+    set -x
+    cd frontend
+    npm install 
+  displayName: 'Install npm dependencies for frontend'
+
+- script: |
+    set -x
+    cd frontend
+    npm run build
+  displayName: 'Build project for frontend'
